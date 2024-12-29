@@ -19,20 +19,23 @@ cd my_project
 
 ### 4 create a rpc client
 
-rpc_client::RpcClient::new()
-from solana_client::rpc_clilent
+use RpcClient::new()
+`solana_client::rpc_clilent::RpcClient`
 
 ### 5 create a keypair
 
-solana_sdk::signature::read_keypair_file
+use read_keypair_file
+`solana_sdk::signature::read_keypair_file`
 
 ### 6 create an asset keypair
 
-Keypair::new() from solana_sdk::signature
+use Keypair::new()
+`solana_sdk::signature::Keypair`
 
 ### 7 create an instruction
 
-CreateV1Builder::new() from mpl_core::instructions
+use CreateV1Builder::new()
+`mpl_core::instructions::CreateV1Builder`
 
 - asset
 - payer
@@ -42,16 +45,17 @@ CreateV1Builder::new() from mpl_core::instructions
 
 ### 8 create signers
 
-vec
+use vec![]
 
 ### 9 get a last blockhash
 
-rpc_client.get_latest_blockhash()
+use rpc_client.get_latest_blockhash()
 
 ### 10 create a transaction
 
-Transaction::new_signed_with_payer from solana_sdk
+use Transaction::new_signed_with_payer
+`solana_sdk::transaction::Transaction`
 
 ### 11 send and confirm transaction
 
-rpc_client.send_and_confirm_transaction
+use rpc_client.send_and_confirm_transaction
