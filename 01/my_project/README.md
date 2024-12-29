@@ -15,6 +15,8 @@ cd my_project
 
 `cargo add solana-client solana-sdk`
 
+![](./image/1.png)
+
 `cargo add mpl-core@0.8.1-beta.1`
 
 ### 4 create a rpc client
