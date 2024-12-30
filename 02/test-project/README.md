@@ -21,17 +21,21 @@
 - faucet
   `https://faucet.solana.com/`
 
-### 4 import anchor_lang
+### 4 add dependency
+
+`cargo add mpl-core`
+
+### 5 import anchor_lang
 
 `use anchor_lang::prelude::*;`
 
-### 5 set program id
+### 6 set program id
 
 `declare_id!("")`
 
 `anchor keys sync`
 
-### 6 create args
+### 7 create args
 
 #### 1 create a struct
 
@@ -48,7 +52,7 @@ uri: String,
 
 `#[derive(AnchorDeserialize, AnchorSerialize)]`
 
-### 7 create accounts
+### 8 create accounts
 
 #### 1 create an outline
 
@@ -86,7 +90,7 @@ pub mpl_core_program
 use ID
 `use mpl_core::ID as MPL_CORE_ID`
 
-### 8 create a program
+### 9 create a program
 
 ```
 
@@ -97,7 +101,7 @@ use super::\*;
 
 ```
 
-### 9 create a function
+### 10 create a function
 
 #### 1 create an outline
 
@@ -125,7 +129,7 @@ CreateV2CpiBuilder::new
 
 use to_account_info()
 
-### 10 deplooy
+### 11 deplooy
 
 `anchor build`
 
