@@ -67,7 +67,6 @@ pub asset,
 pub payer,
 pub system_program,
 pub mpl_core_program
-
 ```
 
 #### 3 set the type
@@ -83,6 +82,9 @@ pub mpl_core_program
 #### 4 set account validation
 
 `https://www.anchor-lang.com/docs/account-constraints`
+
+use ID
+`use mpl_core::ID as MPL_CORE_ID`
 
 ### 8 create a program
 
