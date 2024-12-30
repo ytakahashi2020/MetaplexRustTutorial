@@ -115,7 +115,7 @@ pub fn create_core_asset(ctx: Context<CreateAsset>, args: CreateAssetArgs) -> Re
 
 #### 2
 
-CreateV2CpiBuilder::new
+CreateV2CpiBuilder::new  
 `mpl_core::instructions::CreateV2CpiBuilder`
 
 ```
